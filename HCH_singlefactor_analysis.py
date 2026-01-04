@@ -217,7 +217,8 @@ class SingleFactorTool:
             ax.set_xlabel('Date')
             ax.grid(True)
             plt.tight_layout()
-            display(fig)
+            display(fig)   # IPython 显示
+            plt.show()     # 强制渲染
         else:
             print("daily_stock_hit 为空，未绘制图表。")
         # 多空胜率
